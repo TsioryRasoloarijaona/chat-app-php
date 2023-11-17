@@ -53,6 +53,10 @@
             <div class="link">already signup ? <a href="#">login now</a></div>
         </section>
     </div>
+    
 </body>
+
+<script src="javascript/signup.js"></script>
+
 
 </html>
