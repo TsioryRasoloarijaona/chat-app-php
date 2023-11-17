@@ -227,6 +227,7 @@ form .name-details .field:last-child{
  .users-list{
     max-height: 350px;
     overflow-y: auto;
+    
    
  }
 
