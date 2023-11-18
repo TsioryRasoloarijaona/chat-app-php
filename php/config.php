@@ -4,8 +4,8 @@ $conn = mysqli_connect("localhost",
     "root",
     "",
     "chat-app");
-if($conn){
-    echo "ok";
+if(!$conn){
+    echo "error";
 }
 
 ?>

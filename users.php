@@ -25,7 +25,7 @@
         <section class="users">
           <header>
             <div class="content">
-                <img src="images/IMG_20211229_202455_249.jpg" alt="">
+                <img src="php/images/IMG_20211229_202455_249.jpg" alt="">
                 <div class="details">
                     <span>coding nepal</span>
                     <p>active now</p>
@@ -42,7 +42,7 @@
           <div class="users-list">
             <a href="">
               <div class="content">
-                <img src="images/IMG_20211229_202455_249.jpg" alt="">
+                <img src="php/images/IMG_20211229_202455_249.jpg" alt="">
                 <div class="details">
                   <span> coding nepal</span>
                   <p>this is a teest message</p>
@@ -55,7 +55,7 @@
             </a>
             <a href="">
               <div class="content">
-                <img src="images/IMG_20211229_202455_249.jpg" alt="">
+                <img src="php/images/IMG_20211229_202455_249.jpg" alt="">
                 <div class="details">
                   <span> coding nepal</span>
                   <p>this is a teest message</p>
@@ -68,7 +68,7 @@
             </a>
             <a href="">
               <div class="content">
-                <img src="images/IMG_20211229_202455_249.jpg" alt="">
+                <img src="php/images/IMG_20211229_202455_249.jpg" alt="">
                 <div class="details">
                   <span> coding nepal</span>
                   <p>this is a teest message</p>
@@ -81,7 +81,7 @@
             </a>
             <a href="">
               <div class="content">
-                <img src="images/IMG_20211229_202455_249.jpg" alt="">
+                <img src="php/images/IMG_20211229_202455_249.jpg" alt="">
                 <div class="details">
                   <span> coding nepal</span>
                   <p>this is a teest message</p>
@@ -94,7 +94,7 @@
             </a>
             <a href="">
               <div class="content">
-                <img src="images/IMG_20211229_202455_249.jpg" alt="">
+                <img src="php/images/IMG_20211229_202455_249.jpg" alt="">
                 <div class="details">
                   <span> coding nepal</span>
                   <p>this is a teest message</p>
@@ -107,7 +107,7 @@
             </a>
             <a href="">
               <div class="content">
-                <img src="images/IMG_20211229_202455_249.jpg" alt="">
+                <img src="php/images/IMG_20211229_202455_249.jpg" alt="">
                 <div class="details">
                   <span> coding nepal</span>
                   <p>this is a teest message</p>
@@ -120,7 +120,7 @@
             </a>
             <a href="">
               <div class="content">
-                <img src="images/IMG_20211229_202455_249.jpg" alt="">
+                <img src="php/images/IMG_20211229_202455_249.jpg" alt="">
                 <div class="details">
                   <span> coding nepal</span>
                   <p>this is a teest message</p>
