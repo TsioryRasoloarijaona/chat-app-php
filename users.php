@@ -1,5 +1,9 @@
 <?php
-
+global $conn;
+session_start();
+if (!isset($_SESSION['unique_id'])){
+    header("location: login.php");
+}
 
 ?>
 
@@ -9,11 +13,19 @@
     <div class="wrapper">
         <section class="users">
           <header>
+          <?php
+          include_once "php/config.php";
+          $sql = mysqli_query($conn , "select * from users where unique_id = {$_SESSION['unique_id']}" );
+          if (mysqli_num_rows($sql) > 0 ){
+              $row = mysqli_fetch_assoc($sql);
+          }
+          ?>
+
             <div class="content">
-                <img src="php/images/IMG_20211229_202455_249.jpg" alt="">
+                <img src="php/images/<?php echo $row['img']?>">
                 <div class="details">
-                    <span>coding nepal</span>
-                    <p>active now</p>
+                    <span><?php echo $row['fname'] . " ". $row['lname']?></span>
+                    <p><?php echo $row['status']?></p>
                 </div>
             </div>
             <a href="#" class="logout">logout</a>
@@ -25,101 +37,14 @@
 
           </div>
           <div class="users-list">
-            <a href="">
-              <div class="content">
-                <img src="php/images/IMG_20211229_202455_249.jpg" alt="">
-                <div class="details">
-                  <span> coding nepal</span>
-                  <p>this is a teest message</p>
-                </div>
-                
-              </div>
-              <div class="status-dot">
-                <i class="fa-solid fa-circle"></i>
-              </div>
-            </a>
-            <a href="">
-              <div class="content">
-                <img src="php/images/IMG_20211229_202455_249.jpg" alt="">
-                <div class="details">
-                  <span> coding nepal</span>
-                  <p>this is a teest message</p>
-                </div>
-                
-              </div>
-              <div class="status-dot">
-                <i class="fa-solid fa-circle"></i>
-              </div>
-            </a>
-            <a href="">
-              <div class="content">
-                <img src="php/images/IMG_20211229_202455_249.jpg" alt="">
-                <div class="details">
-                  <span> coding nepal</span>
-                  <p>this is a teest message</p>
-                </div>
-                
-              </div>
-              <div class="status-dot">
-                <i class="fa-solid fa-circle"></i>
-              </div>
-            </a>
-            <a href="">
-              <div class="content">
-                <img src="php/images/IMG_20211229_202455_249.jpg" alt="">
-                <div class="details">
-                  <span> coding nepal</span>
-                  <p>this is a teest message</p>
-                </div>
-                
-              </div>
-              <div class="status-dot">
-                <i class="fa-solid fa-circle"></i>
-              </div>
-            </a>
-            <a href="">
-              <div class="content">
-                <img src="php/images/IMG_20211229_202455_249.jpg" alt="">
-                <div class="details">
-                  <span> coding nepal</span>
-                  <p>this is a teest message</p>
-                </div>
-                
-              </div>
-              <div class="status-dot">
-                <i class="fa-solid fa-circle"></i>
-              </div>
-            </a>
-            <a href="">
-              <div class="content">
-                <img src="php/images/IMG_20211229_202455_249.jpg" alt="">
-                <div class="details">
-                  <span> coding nepal</span>
-                  <p>this is a teest message</p>
-                </div>
-                
-              </div>
-              <div class="status-dot">
-                <i class="fa-solid fa-circle"></i>
-              </div>
-            </a>
-            <a href="">
-              <div class="content">
-                <img src="php/images/IMG_20211229_202455_249.jpg" alt="">
-                <div class="details">
-                  <span> coding nepal</span>
-                  <p>this is a teest message</p>
-                </div>
-                
-              </div>
-              <div class="status-dot">
-                <i class="fa-solid fa-circle"></i>
-              </div>
-            </a>
+
+
           </div>
         </section>
     </div>
 </body>
+
 <script src="javascript/users.js"></script>
+<script src="javascript/userList.js"></script>
 
 </html>
