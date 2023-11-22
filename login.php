@@ -25,7 +25,7 @@ include_once "header.php"
                 </div>
 
             </form>
-            <div class="link">not yet signup ? <a href="#">sign up now</a></div>
+            <div class="link">not yet signup ? <a href="index.php">sign up now</a></div>
         </section>
     </div>
 </body>

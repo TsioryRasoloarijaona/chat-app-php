@@ -32,7 +32,7 @@ if (!isset($_SESSION['unique_id'])){
           </header>
           <div class="search">
             <span class="text">select an user to start chat</span>
-            <input type="text" placeholder="enter name to start chat....">
+            <input type="text" placeholder="enter name to start chat...." name="searchTerm">
             <button><i class="fa-solid fa-magnifying-glass"></i></button>
 
           </div>
@@ -45,6 +45,6 @@ if (!isset($_SESSION['unique_id'])){
 </body>
 
 <script src="javascript/users.js"></script>
-<script src="javascript/userList.js"></script>
+
 
 </html>
