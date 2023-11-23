@@ -34,66 +34,7 @@ include_once "header.php"
           </header>
 
           <div class="chat-box">
-            <div class="chat outgoing">
-                <div class="details">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem vel, 
-                        
-                        
-                        !</p>
-                </div>
-            </div>
-            <div class="chat incoming">
-                <img src="php/images/IMG_20211229_202455_249.jpg" alt="">
-                <div class="details">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem vel, 
-                        </p>
-                </div>
-            </div>
-            <div class="chat outgoing">
-                <div class="details">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem vel, 
-                        
-                        
-                        !</p>
-                </div>
-            </div>
-            <div class="chat incoming">
-                <img src="php/images/IMG_20211229_202455_249.jpg" alt="">
-                <div class="details">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem vel, 
-                        </p>
-                </div>
-            </div>
-            <div class="chat outgoing">
-                <div class="details">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem vel, 
-                        
-                        
-                        !</p>
-                </div>
-            </div>
-            <div class="chat incoming">
-                <img src="php/images/IMG_20211229_202455_249.jpg" alt="">
-                <div class="details">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem vel, 
-                        </p>
-                </div>
-            </div>
-            <div class="chat outgoing">
-                <div class="details">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem vel, 
-                        
-                        
-                        !</p>
-                </div>
-            </div>
-            <div class="chat incoming">
-                <img src="php/images/IMG_20211229_202455_249.jpg" alt="">
-                <div class="details">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem vel, 
-                        </p>
-                </div>
-            </div>
+
           </div>
 
           <form action="" class="typing-area" autocomplete="off">

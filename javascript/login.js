@@ -17,13 +17,13 @@ continueBtn.onclick = ()=>{
                 console.log(data)
                 if (data === "succes"){
                     location.href = "users.php";
-
-
                 }else{
                     errorTxt.textContent = data
                     errorTxt.style.display = "block";
-
+                    form.innerText = "";
                 }
+
+
 
             }else{
                 console.log(xhr.status);
