@@ -7,7 +7,7 @@ if (isset($_SESSION['unique_id'])){
     $outgoing_id = mysqli_real_escape_string($conn, $_POST['outgoing_id']);
     $incoming_id = mysqli_real_escape_string($conn, $_POST['incoming_id']);
     $output = "";
-    $sql = "select * from messages where (outcoming_id = {$outgoing_id}
+    $sql = "select * from messages LEFT JOIN users on users.unique_id = messages.incoming_id where (outcoming_id = {$outgoing_id}
     AND incoming_id = {$incoming_id}) OR (outcoming_id = {$incoming_id} AND incoming_id = {$outgoing_id})
     ORDER BY msg_id ASC";
 
@@ -23,7 +23,7 @@ if (isset($_SESSION['unique_id'])){
 
             }else{
                 $output .= '<div class="chat incoming">
-                            <img src="php/images/ alt="pic">
+                            <img src="php/images/'.$row['img'].'">
                             <div class="details">
                             <p>'.$row['msg'].'</p>
                             </div>

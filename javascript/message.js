@@ -3,6 +3,8 @@ const form = document.querySelector(".typing-area"),
     sendBtn = form.querySelector("button"),
     chatBox = document.querySelector(" .chat-box")
 
+chatBox.scrollTop = chatBox.scrollHeight;
+
 form.onsubmit = (e)=>{
     e.preventDefault();
 }
