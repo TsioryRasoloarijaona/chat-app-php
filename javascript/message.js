@@ -29,7 +29,13 @@ sendBtn.onclick = ()=>{
     xhr.send(formData);
 }
 
+chatBox.onmouseenter = ()=>{
+    chatBox.classList.add("active");
+}
 
+chatBox.onmouseleave = () => {
+    chatBox.classList.remove("active")
+}
 
 
 setInterval(()=>{
@@ -43,7 +49,9 @@ setInterval(()=>{
                     let data = xhr.response;
                     console.log(data)
                     chatBox.innerHTML = data
-                    scroll();
+                    if (!chatBox.classList.contains("active")){
+                        scroll();
+                    }
                 }else{
                     console.log(xhr.status);
                 }

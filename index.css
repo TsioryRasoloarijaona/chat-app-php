@@ -274,19 +274,19 @@ form .name-details .field:last-child{
     color: #67676a;
  }
 
- .users-list a .status-dot{
+ .users-list a .status-dot .online{
     font-size: 12px;
     color: green;
  }
 
- .users-list a .status-dot .offline{
+ /*.users-list a .status-dot .offline{
      color: #ccc;
-  
  }
+
 
 .users-list::-webkit-scrollbar{
     width: 0px;
-}
+}*/
 
  .users-list a:last-child{
     border: none;

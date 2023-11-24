@@ -9,16 +9,27 @@ while ($row = mysqli_fetch_assoc($sql)){
     }else{
         $result = "no available msg";
     }
+
+
+
+    (strlen($result) > 28 ) ? $msg = substr($result , 0 , 28). ' ...' : $msg = $result ;
+    //($outgoing_id == $row1['outcoming_id']) ? $you = "you: " : $you = "";
+    $offline = null;
+    if ($row['status'] == "offline now"){
+        $status = "#ccc";
+    }else{
+        $status = "green";
+    }
     $output .= '<a href="message.php?user_id='.$row['unique_id'].'">
                     <div class="content">
                     <img src="php/images/'. $row['img'] .' " alt="">
                     <div class="details">
                     <span>'.$row['fname']. " " .$row['lname'].'</span>
-                    <p>'.$result.'</p>
+                    <p>'.$msg.'</p>
                     </div>
                 
                     </div>
-                    <div class="status-dot">
+                    <div class="status-dot "  style = "color : '.$status.'">
                     <i class="fa-solid fa-circle"></i>
                     </div>
                     </a>';
