@@ -21,6 +21,7 @@ while ($row = mysqli_fetch_assoc($sql)){
         $status = "green";
     }
     $output .= '<a href="message.php?user_id='.$row['unique_id'].'">
+                    
                     <div class="content">
                     <img src="php/images/'. $row['img'] .' " alt="">
                     <div class="details">

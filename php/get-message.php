@@ -14,15 +14,21 @@ if (isset($_SESSION['unique_id'])){
     $query = mysqli_query($conn , $sql);
     if (mysqli_num_rows($query) > 0){
         while ($row = mysqli_fetch_assoc($query)){
+           $time = $row['send_time'];
+          $legth = substr($time,0,16);
             if ($row['outcoming_id'] === $outgoing_id){
-                $output .= '<div class="chat outgoing">
+                $output .= '<p style="font-size: 12px; text-align: center">'.$legth.'</p>
+                            <div class="chat outgoing">
                             <div class="details">
                             <p>'.$row['msg'].'</p>
                             </div>
                             </div>';
 
+
+
             }else{
-                $output .= '<div class="chat incoming">
+                $output .= '<p style="font-size: 12px; text-align: center">'.$legth.'</p>
+                            <div class="chat incoming">
                             <img src="php/images/'.$row['img'].'">
                             <div class="details">
                             <p>'.$row['msg'].'</p>
