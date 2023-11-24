@@ -3,7 +3,7 @@ const form = document.querySelector(".typing-area"),
     sendBtn = form.querySelector("button"),
     chatBox = document.querySelector(" .chat-box")
 
-chatBox.scrollTop = chatBox.scrollHeight;
+
 
 form.onsubmit = (e)=>{
     e.preventDefault();
@@ -19,6 +19,7 @@ sendBtn.onclick = ()=>{
                let data = xhr.response;
                 console.log(data);
                 inputField.value = "";
+                scroll();
             }else{
                 console.log(xhr.status);
             }
@@ -42,6 +43,7 @@ setInterval(()=>{
                     let data = xhr.response;
                     console.log(data)
                     chatBox.innerHTML = data
+                    scroll();
                 }else{
                     console.log(xhr.status);
                 }
@@ -51,5 +53,10 @@ setInterval(()=>{
         xhr.send(formData);
 
 },500)
+
+
+function scroll(){
+    chatBox.scrollTop = chatBox.scrollHeight;
+}
 
 
