@@ -28,7 +28,7 @@ if (!isset($_SESSION['unique_id'])){
                     <p><?php echo $row['status']?></p>
                 </div>
             </div>
-            <a href="#" class="logout">logout</a>
+            <a href="php/logout.php?logout_id=<?php echo $row['unique_id']?>" class="logout">logout</a>
           </header>
           <div class="search">
             <span class="text">select an user to start chat</span>

@@ -2,6 +2,7 @@ const form = document.querySelector(".login form"),
     continueBtn = form.querySelector(".button input"),
     errorTxt = form.querySelector(".error-txt");
 
+
 form.onsubmit = (e)=>{
     e.preventDefault();
 }
@@ -20,7 +21,7 @@ continueBtn.onclick = ()=>{
                 }else{
                     errorTxt.textContent = data
                     errorTxt.style.display = "block";
-                    form.innerText = "";
+
                 }
 
 

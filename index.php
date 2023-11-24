@@ -5,7 +5,7 @@ include_once "header.php"
 <body>
     <div class="wrapper">
         <section class="form signup">
-            <header>real time chat app</header>
+            <header>CHAT APP BY TsiRA</header>
             <form action="#" enctype="multipart/form-data">
                 <div class="error-txt">
                     this is an error text
