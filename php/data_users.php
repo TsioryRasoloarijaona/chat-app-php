@@ -13,15 +13,17 @@ while ($row = mysqli_fetch_assoc($sql)){
 
 
     (strlen($result) > 28 ) ? $msg = substr($result , 0 , 28). ' ...' : $msg = $result ;
-    //($outgoing_id == $row1['outcoming_id']) ? $you = "you: " : $you = "";
+
     $offline = null;
     if ($row['status'] == "offline now"){
         $status = "#ccc";
     }else{
         $status = "green";
     }
-    $output .= '<a href="message.php?user_id='.$row['unique_id'].'">
-                    
+
+
+    if (strlen($msg) > 0){
+        $output .= '<a href="message.php?user_id='.$row['unique_id'].'">
                     <div class="content">
                     <img src="php/images/'. $row['img'] .' " alt="">
                     <div class="details">
@@ -30,9 +32,26 @@ while ($row = mysqli_fetch_assoc($sql)){
                     </div>
                 
                     </div>
-                    <div class="status-dot "  style = "color : '.$status.'">
+                    <div class="status-dot "  style = "color : '.$status.';font-size: 12px" >
                     <i class="fa-solid fa-circle"></i>
                     </div>
                     </a>';
+    }else{
+        $output .= '<a href="message.php?user_id='.$row['unique_id'].'">
+                    <div class="content">
+                    <img src="php/images/'. $row['img'] .' " alt="">
+                    <div class="details">
+                    <span>'.$row['fname']. " " .$row['lname'].'</span>
+                    <p>image</p>
+                    </div>
+                
+                    </div>
+                    <div class="status-dot "  style = "color : '.$status.' ;font-size: 12px">
+                    <i class="fa-solid fa-circle"></i>
+                    </div>
+                    </a>';
+    }
+
+
 }
 ?>

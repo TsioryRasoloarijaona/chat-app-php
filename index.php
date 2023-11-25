@@ -5,7 +5,7 @@ include_once "header.php"
 <body>
     <div class="wrapper">
         <section class="form signup">
-            <header>CHAT APP BY TsiRA</header>
+            <header>Chat app </header>
             <form action="#" enctype="multipart/form-data">
                 <div class="error-txt">
                     this is an error text
@@ -40,7 +40,9 @@ include_once "header.php"
             </form>
             <div class="link">already signup ? <a href= "login.php">login now</a></div>
         </section>
+        <div class="footer"><a href="https://tsiory-tf50.onrender.com">directed by @TsioryRasoloarijaona</a></div>
     </div>
+
 </body>
 <script src="javascript/signup.js"></script>
 

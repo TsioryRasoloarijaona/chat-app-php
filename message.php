@@ -39,6 +39,8 @@ include_once "header.php"
 
           <form action="" class="typing-area" autocomplete="off">
             <input type="text" name="messages" class="input-field" id="" placeholder="type a message here ...">
+            <label for="file"><i class="fa-regular fa-image"></i></label>
+            <input type="file" name="files" id="file" hidden>
             <input value="<?php echo $user_id ?>" name="outgoing_id" hidden>
               <input value="<?php echo $_SESSION['unique_id']?>" name="incoming_id" hidden>
 

@@ -155,7 +155,7 @@ form .name-details .field:last-child{
 
 .wrapper img{
     object-fit: cover;
-    border-radius: 50%;
+   /* border-radius: 50%;*/
 }
 
 :is(.users , .users-list) .content
@@ -168,6 +168,7 @@ form .name-details .field:last-child{
  .content img{
     height: 50px;
     width: 50px;
+     border-radius: 50%;
 }
 
 :is(.users , .users-list) .details{
@@ -267,6 +268,7 @@ form .name-details .field:last-child{
  .users-list a .content img{
      height: 40px;
      width: 40px;
+     border-radius: 50%;
  } 
 
  .users-list a .content p{
@@ -281,12 +283,12 @@ form .name-details .field:last-child{
 
  /*.users-list a .status-dot .offline{
      color: #ccc;
- }
+ }*/
 
 
 .users-list::-webkit-scrollbar{
     width: 0px;
-}*/
+}
 
  .users-list a:last-child{
     border: none;
@@ -307,7 +309,8 @@ form .name-details .field:last-child{
 .chat-area header img{
     width : 45px;
     height: 45px; 
-    margin: 0 15px;   
+    margin: 0 15px;
+    border-radius: 50%;
 
 }
 
@@ -372,9 +375,11 @@ form .name-details .field:last-child{
     align-items: flex-end;
 }
 
-.chat-box .incoming img{
+.chat-box .incoming .come{
     height: 35px;
     width: 35px;
+    border-radius: 50%;
+
 }
 
 .incoming .details{
@@ -396,7 +401,14 @@ form .name-details .field:last-child{
 .chat-area .typing-area{
     padding: 18px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+}
+
+.chat-area .typing-area label {
+    font-size: 20px;
+    cursor: pointer;
 }
 
 .typing-area input{
@@ -419,4 +431,21 @@ form .name-details .field:last-child{
 
 .typing-area input::placeholder{
     font-size: 15px;
+}
+
+.chat .details #send_img{
+    width: 200px;
+    height: 200px;
+    object-fit:scale-down;
+    border-radius: 10px;
+}
+
+.footer{
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.footer a{
+    color: black;
 }

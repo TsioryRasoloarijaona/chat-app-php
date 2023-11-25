@@ -17,23 +17,46 @@ if (isset($_SESSION['unique_id'])){
            $time = $row['send_time'];
           $legth = substr($time,0,16);
             if ($row['outcoming_id'] === $outgoing_id){
-                $output .= '<p style="font-size: 12px; text-align: center">'.$legth.'</p>
+                if (strlen($row['msg']) > 0 && strlen($row['files']) == 0) {
+                    $output .= '<p style="font-size: 12px; text-align: center">' . $legth . '</p>
                             <div class="chat outgoing">
                             <div class="details">
-                            <p>'.$row['msg'].'</p>
+                            <p>' . $row['msg'] . '</p>
                             </div>
                             </div>';
+                }else{
+                    $output .= '<p style="font-size: 12px; text-align: center">' . $legth . '</p>
+                            <div class="chat outgoing">
+                            <div class="details">
+                            <img src="php/send_img/'.$row['files'].'" id="send_img">
+                          
+                            </div>
+                            </div>';
+                }
+
+
+                          
 
 
 
             }else{
-                $output .= '<p style="font-size: 12px; text-align: center">'.$legth.'</p>
+                if (strlen($row['msg']) > 0 && strlen($row['files']) == 0) {
+                    $output .= '<p style="font-size: 12px; text-align: center">' . $legth . '</p>
                             <div class="chat incoming">
-                            <img src="php/images/'.$row['img'].'">
+                            <img src="php/images/' . $row['img'] . '" class="come">
                             <div class="details">
-                            <p>'.$row['msg'].'</p>
+                            <p>' . $row['msg'] . '</p>
                             </div>
                             </div>';
+                }else{
+                    $output .= '<p style="font-size: 12px; text-align: center">' . $legth . '</p>
+                            <div class="chat incoming">
+                            <img src="php/images/' . $row['img'] . '" class="come">
+                            <div class="details">
+                            <img src="php/send_img/'.$row['files'].'" id="send_img">
+                            </div>
+                            </div>';
+                }
 
             }
         }

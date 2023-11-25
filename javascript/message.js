@@ -1,7 +1,8 @@
 const form = document.querySelector(".typing-area"),
     inputField = form.querySelector(".input-field"),
     sendBtn = form.querySelector("button"),
-    chatBox = document.querySelector(" .chat-box")
+    chatBox = document.querySelector(" .chat-box"),
+    fileInput = document.getElementById("file")
 
 
 
@@ -19,6 +20,7 @@ sendBtn.onclick = ()=>{
                let data = xhr.response;
                 console.log(data);
                 inputField.value = "";
+                fileInput.value = "";
                 scroll();
             }else{
                 console.log(xhr.status);
@@ -49,6 +51,7 @@ setInterval(()=>{
                     let data = xhr.response;
                     console.log(data)
                     chatBox.innerHTML = data
+
                     if (!chatBox.classList.contains("active")){
                         scroll();
                     }
