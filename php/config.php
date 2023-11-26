@@ -3,7 +3,7 @@
 $conn = mysqli_connect("localhost",
     "root",
     "",
-    "your database name");
+    "chat-app");
 if(!$conn){
     echo "error";
 }
