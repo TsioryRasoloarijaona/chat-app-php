@@ -1,5 +1,5 @@
 create table messages (
-      msg_id int primary key auto-inrement ,
+      msg_id int primary key auto-increment ,
       incoming_id int (200),
       outcoming_id int (200),
       msg text ,
