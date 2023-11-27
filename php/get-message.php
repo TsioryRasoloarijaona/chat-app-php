@@ -53,7 +53,7 @@ if (isset($_SESSION['unique_id'])){
                             <div class="chat incoming">
                             <img src="php/images/' . $row['img'] . '" class="come">
                             <div class="details">
-                            <img src="php/send_img/'.$row['files'].'" id="send_img">
+                            <a href="php/send_img/'.$row['files'].'"><img src="php/send_img/'.$row['files'].'" id="send_img"></a>
                             </div>
                             </div>';
                 }
