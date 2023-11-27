@@ -1,5 +1,5 @@
 # chat-app-php
-this app is based in PHP and MySQL
+this app is based on PHP and MySQL
 
 ## functionnality
 - sing up with email checking and upload your own profile picture
