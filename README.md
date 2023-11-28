@@ -9,3 +9,6 @@ this app is based on PHP and MySQL
 - last message with a specific user
 - instant chat
 - possibility to send pictures
+
+### deployment
+link : http://tsiory.alwaysdata.net/
