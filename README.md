@@ -1,7 +1,7 @@
 # chat-app-php
 this app is based on PHP and MySQL
 
-## functionnality
+## features
 - sing up with email checking and upload your own profile picture
 - login with authentification : email address and password
 - list of all available user with status : online or offline
